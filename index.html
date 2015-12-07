@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico.png" >
+  </head>
+  <body id="home" class="bg-grey" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!-- facebook like button code -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home">ESCAPING THE SQUARE</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#book">BOOK</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- JumboTron -->
+    <div class="jumbotron text-center">
+      <h1>Escaping the Square</h1>
+
+      <h3>At the Opera House</h3>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <a class="btn btn-success btn-default btn-lg" href="scheduling.php">BOOK NOW</a>
+        </div>
+      </div>
+    </div>
+    <!-- The about section -->
+    <div id="about" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-2">
+          <h2>ABOUT</h2>
+          <br>
+          <p>
+            <strong>Escaping the Square</strong> is a fun interactive game for all ages.
+              The rooms are designed with clues, riddles, and evidence in order to escape the mystery. Your 60 minutes of theories may lead you to escaping the square.
+          </p>
+        </div>
+        <div class="col-sm-2">
+          <img src="img/operahouse.jpg" height="200px">
+        </div>
+        <div id="img-container" class="col-sm-2">
+          <h2>CURRENT THEME</H2>
+          <br>
+          <p>
+            <strong>International Spy Room:</strong> Your team is a highly trained group of international spies, which have infiltrated the Republic of the Square. Your country has been put on high alert! You must stop the imminent threat, and prevent WWIII. The world will be on edge for the next 60 minutes.
+          </p>
+        </div>
+        <div class="col-sm-2">
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <div class="fb-comments" data-href="https://www.facebook.com/escapingthesquare" data-width="500" data-numposts="5"></div>
+          <br>
+          <div class="fb-like" data-href="https://www.facebook.com/escapingthesquare" data-width="450" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
+
+      </div>
+    </div>
+    <!-- The book section -->
+    <div id="book" class="container-fluid text-center">
+      <div class="row">
+        <h2>BOOK</h2>
+        <br>
+        <p>We are open <strong>Monday, Wednesday, Friday, Saturday, and Sunday.</strong></p>
+        <p>For scheduling purposes, if your party has less than 6 people, you may be paired with another party to work as a team in finding the solution.</p>
+        <br>
+        <a class="btn btn-danger btn-lg" href="scheduling.php">Book Now</a>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact" class="container-fluid bg-grey">
+      <h2 class="text-center">CONTACT</h2>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h4><strong>Phone:</strong></h4>
+          <h3>(940) 597-1130</h3>
+          <br>
+          <h4><strong>Address:</strong></h4>
+          <p>The Opera House</p>
+          <p>109 East Oak Street</p>
+          <p>Suite 700</p>
+          <p>Denton TX 76201</p>
+        </div>
+      </div>
+      <!-- Set height and width with CSS -->
+      <div id="googleMap" style="height:400px;width:100%;"></div>
+
+      <!-- Add Google Maps -->
+      <script src="http://maps.googleapis.com/maps/api/js"></script>
+      <script>
+        var myCenter = new google.maps.LatLng(33.215713, -97.132219);
+
+        function initialize() {
+          var mapProp = {
+            center:myCenter,
+            zoom:17,
+            scrollwheel:false,
+            draggable:false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+
+          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+          var marker = new google.maps.Marker({
+            position:myCenter,
+          });
+
+          marker.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+      </script>
+    </div>
+    <footer class="container-fluid text-center">
+      <a href="#home" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p>Copyright (c) 2015 Escaping the Square</p>
+    </footer>
+  </body>
+</html>
