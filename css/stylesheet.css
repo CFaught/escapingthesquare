@@ -2,6 +2,7 @@
     background: #a54dff url("../img/logo2-purple.png") repeat-x;
     color: #fff;
     padding: 100px 25px;
+    background-position: center;
 }
 
 .jumbotron p {
@@ -82,5 +83,9 @@ footer .glyphicon {
     #book {
         padding:0;
         margin:0;
+    }
+    body {
+        padding:0;
+        
     }
 }
