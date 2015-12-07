@@ -78,3 +78,9 @@ footer .glyphicon {
   color: #fff;
   padding: 200px;
 }
+@media (max-width: 480px) {
+    #book {
+        padding:0;
+        margin:0;
+    }
+}
