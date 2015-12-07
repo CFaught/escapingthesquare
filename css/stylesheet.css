@@ -1,0 +1,80 @@
+.jumbotron {
+    background: #a54dff url("../img/logo2-purple.png") repeat-x;
+    color: #fff;
+    padding: 100px 25px;
+}
+
+.jumbotron p {
+  max-width: 900px;
+  font-family: sans-serif;
+}
+.jumbotron h1 {
+  font-size: 90px;
+  font-family: 'Permanent Marker', cursive;
+}
+.jumbotron h3 {
+  font-family: 'Permanent Marker';
+
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.container-fluid {
+    padding: 60px 50px;
+}
+#img-container {
+  align-items: center;
+}
+p {
+  font-family: 'Raleway', sans;
+  font-weight: 400;
+}
+h2 {
+  font-family: 'Raleway', sans;
+}
+a {
+  font-family: 'Raleway', sans;
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #a54dff;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #a54dff !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #a54dff;
+}
+
+.jumbotron a {
+  border-color: #4B0082;
+  background-color: #663399;
+}
+
+#about h2 {
+  text-align: center;
+}
+#book {
+  background-color: #a54dff;
+  color: #fff;
+  padding: 200px;
+}
