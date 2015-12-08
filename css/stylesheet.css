@@ -83,4 +83,7 @@ footer .glyphicon {
     padding: 0px;
     margin: 0px;
   }
+  .jumbotron h1 {
+    font-size: 40px;
+  }
 }
