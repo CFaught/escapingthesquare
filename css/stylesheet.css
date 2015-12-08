@@ -81,5 +81,6 @@ footer .glyphicon {
 @media (max-width: 767px) {
   #book {
     padding: 0px;
+    margin: 0px;
   }
 }
