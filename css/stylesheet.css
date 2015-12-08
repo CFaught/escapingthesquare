@@ -77,10 +77,13 @@ footer .glyphicon {
 #book {
   background-color: #a54dff;
   color: #fff;
-  padding: 200px 0px;
+  padding: 200px 0px 200px 0px;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   .container-fluid, .row {
-    padding:0px;
+    padding: 0px;
+  }
+  #book {
+      padding: 0px;
   }
 }
