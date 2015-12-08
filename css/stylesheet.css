@@ -79,7 +79,7 @@ footer .glyphicon {
   padding: 200px;
 }
 @media (max-width: 767px) {
-  .container-fluid, .row {
-    padding:0px;
+  #book {
+    padding: 0px;
   }
 }
