@@ -81,7 +81,7 @@ footer .glyphicon {
 }
 @media (max-width: 767px) {
   #book {
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
   }
   .jumbotron h1 {
