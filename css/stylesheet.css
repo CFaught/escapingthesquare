@@ -2,6 +2,7 @@
     background: #a54dff url("../img/logo2-purple.png") repeat-x;
     color: #fff;
     padding: 100px 25px;
+    background-position: center;
 }
 
 .jumbotron p {
