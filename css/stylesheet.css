@@ -86,4 +86,7 @@ footer .glyphicon {
   .jumbotron h1 {
     font-size: 40px;
   }
+  .navbar a {
+      font-size: 10px;
+  }
 }
