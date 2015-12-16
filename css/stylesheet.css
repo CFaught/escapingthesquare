@@ -76,6 +76,12 @@ footer .glyphicon {
   padding: 0px;
 
 }
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    max-height: 500px;
+}
+
 @media (max-width: 767px) {
   #book {
     padding: 15px;
